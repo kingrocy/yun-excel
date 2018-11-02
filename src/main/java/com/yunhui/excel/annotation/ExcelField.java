@@ -1,4 +1,6 @@
-package com.yunhui.excel;
+package com.yunhui.excel.annotation;
+
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
 
 import java.lang.annotation.*;
 
@@ -19,4 +21,5 @@ public @interface ExcelField {
 
     String name() default "";
 
+    HorizontalAlignment cellAlign() default HorizontalAlignment.GENERAL;
 }
