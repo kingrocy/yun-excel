@@ -1,16 +1,9 @@
 package com.yun.test;
 
 import com.yunhui.excel.poi.ExcelUtils;
-
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * Title: ExportToHttpResponse.java <br>

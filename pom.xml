@@ -8,6 +8,45 @@
     <artifactId>yun-excel</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <tag>master</tag>
+        <url>git@github.com:kingrocy/yun-excel.git</url>
+        <connection>scm:git:git@github.com:kingrocy/yun-excel.git</connection>
+        <developerConnection>scm:git:git@github.com:kingrocy/yun-excel.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>kingrocy</name>
+            <email>1097598984@qq.com</email>
+            <organization>Yun</organization>
+        </developer>
+    </developers>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>oss</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>oss</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -36,4 +75,6 @@
         </dependency>
 
     </dependencies>
+
+
 </project>
