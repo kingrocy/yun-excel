@@ -1,7 +1,6 @@
 package com.yun.test;
 
 import com.yunhui.excel.annotation.ExcelField;
-import com.yunhui.excel.annotation.ExcelTable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -13,7 +12,6 @@ import lombok.Data;
  *
  * @author yun
  */
-@ExcelTable(tableName = "测试excel名称")
 @Data
 @AllArgsConstructor
 public class People {
