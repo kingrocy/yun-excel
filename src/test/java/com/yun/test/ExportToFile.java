@@ -10,9 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Title: ExportToFile.java <br>
@@ -30,9 +28,20 @@ public class ExportToFile {
             People people=new People("xxxx",24,"xxxx","xxxxxxxxxxx","xxxxxxxxxxx","浙江省杭州市余杭区xxxxxxxxx");
             list.add(people);
         }
-        OutputStream outputStream=new FileOutputStream(new File("D://test//test.xls"));
-        //导出
+        OutputStream outputStream=new FileOutputStream(new File("D://data//test.xls"));
+        //方式1：在实体类加上导出注解
         ExcelUtils.export(list,outputStream);
+
+        //方式2：用一个map 标识导出字段和excel头部
+        Map<String,String> headMap=new LinkedHashMap<>();
+
+        headMap.put("age","年龄");
+        headMap.put("wx","微信");
+        headMap.put("name","姓名");
+        headMap.put("phone","手机号");
+
+        ExcelUtils.export(list,headMap,outputStream);
+
     }
 
 }
