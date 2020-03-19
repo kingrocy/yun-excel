@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * Title: ExportToHttpResponse.java <br>
  * Description: <br>
- * Copyright (c) 聚阿网络科技版权所有 2018 <br>
  * Create DateTime: 2018年11月02日 14:26 <br>
  *
  * @author yun

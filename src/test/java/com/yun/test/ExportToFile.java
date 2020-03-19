@@ -9,7 +9,6 @@ import java.util.*;
 /**
  * Title: ExportToFile.java <br>
  * Description: <br>
- * Copyright (c) 聚阿网络科技版权所有 2018 <br>
  * Create DateTime: 2018年11月02日 14:26 <br>
  *
  * @author yun
@@ -22,7 +21,7 @@ public class ExportToFile {
             People people=new People("xxxx",24,"xxxx","xxxxxxxxxxx","xxxxxxxxxxx","浙江省杭州市余杭区xxxxxxxxx");
             list.add(people);
         }
-        OutputStream outputStream=new FileOutputStream(new File("D://data//test.xls"));
+        OutputStream outputStream=new FileOutputStream(new File("/Users/dushaoyun/test/test.xls"));
         //方式1：在实体类加上导出注解
         ExcelUtils.export(list,outputStream);
 

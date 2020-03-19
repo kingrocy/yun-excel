@@ -1,10 +1,12 @@
 package com.yunhui.excel.poi;
 import com.yunhui.excel.annotation.ExcelField;
 import com.yunhui.excel.bean.SortedField;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.*;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
@@ -15,11 +17,11 @@ import java.util.stream.Collectors;
 /**
  * Title: ExcelUtils.java <br>
  * Description: <br>
- * Copyright (c) 聚阿网络科技版权所有 2018 <br>
  * Create DateTime: 2018年10月25日 11:35 <br>
  *
  * @author yun
  */
+@Slf4j
 public class ExcelUtils {
 
     public static <T> void export(List<T> dataList, String fileName, HttpServletResponse response) {
@@ -27,7 +29,7 @@ public class ExcelUtils {
             fillResponse(response,fileName);
             export(dataList, response.getOutputStream());
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("export error",e);
         }
     }
 
@@ -36,7 +38,7 @@ public class ExcelUtils {
             fillResponse(response,fileName);
             export(dataList, headMap, response.getOutputStream());
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("export error",e);
         }
     }
 
@@ -45,7 +47,18 @@ public class ExcelUtils {
             Workbook workBook = createWorkBook(dataList);
             workBook.write(outputStream);
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("export error",e);
+        }finally {
+            try {
+                outputStream.flush();
+            } catch (IOException e) {
+                log.error("flush error",e);
+            }
+            try {
+                outputStream.close();
+            } catch (IOException e) {
+                log.error("close error",e);
+            }
         }
     }
 
@@ -54,7 +67,18 @@ public class ExcelUtils {
             Workbook workBook = createWorkBook(dataList, headMap);
             workBook.write(outputStream);
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("export error",e);
+        }finally {
+            try {
+                outputStream.flush();
+            } catch (IOException e) {
+                log.error("flush error",e);
+            }
+            try {
+                outputStream.close();
+            } catch (IOException e) {
+                log.error("close error",e);
+            }
         }
     }
 

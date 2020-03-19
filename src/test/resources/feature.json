@@ -1,0 +1,378 @@
+[
+  {
+    "col": "car_info.a.isauthentication",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "IsAuthentication",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "seller_info.b.isauthenticate",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "IsAuthenticate",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "T_CUS_MasterUser",
+      "targetTable": "T_CUS_MasterUser",
+      "leftKey": "MemberCode",
+      "rightKey": "UserMemberCode"
+    }
+  },
+  {
+    "col": "car_info.a.ranklevel",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "rank_level",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.rankdesc",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "rank_desc",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.oldused",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "OldUsed",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.purpose",
+    "type": 1,
+    "dbField": "purpose",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.complementtag",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "ComplementTag",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.drivemode",
+    "type": 1,
+    "dbField": "drivemode",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.isblister",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "IsSoakWater",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "CarData",
+      "targetTable": "CarData",
+      "leftKey": "TradeCode",
+      "rightKey": "TradeCode"
+    }
+  },
+  {
+    "col": "car_info.a.isfirecar",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "IsFire",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "CarData",
+      "targetTable": "CarData",
+      "leftKey": "TradeCode",
+      "rightKey": "TradeCode"
+    }
+  },
+  {
+    "col": "car_info.a.iswatercar",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "IsSoakWater",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "CarData",
+      "targetTable": "CarData",
+      "leftKey": "TradeCode",
+      "rightKey": "TradeCode"
+    }
+  },
+  {
+    "col": "car_info.a.transmission",
+    "type": 1,
+    "dbField": "transmission",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.intakemode",
+    "type": 1,
+    "dbField": "intakemode",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.emissionstandard",
+    "type": 1,
+    "dbField": "emission_standard",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.sweptvolume",
+    "type": 1,
+    "dbField": "swept_volume",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.tradetimes",
+    "type": 1,
+    "dbField": "tradetimes",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.publishyear",
+    "type": 1,
+    "dbField": "publishyear",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.insureexpired",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "InsureExpired",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.inspectexpired",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "InspectExpired",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.lastregarea",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "LastRegarea",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.regarea",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "Regarea",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.wgjc_czq",
+    "type": 1,
+    "dbField": "",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.actionmode",
+    "type": 1,
+    "dbField": "AucRootTag",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "tbAuction_BaseInfo",
+    "group": 0
+  },
+  {
+    "col": "seller_info.e.xinli_price",
+    "type": 1,
+    "dbField": "BasePrice",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "tbAuction_BaseInfo",
+    "group": 0
+  },
+  {
+    "col": "seller_info.e.qipai_price",
+    "type": 1,
+    "dbField": "AuctionPrice",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "tbAuction_BaseInfo",
+    "group": 0
+  },
+  {
+    "col": "seller_info.e.baoliu_price",
+    "type": 1,
+    "dbField": "baoliu_price",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "sc_car_model_id",
+    "type": 1,
+    "dbField": "sc_car_model_id",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.carregdate",
+    "type": 1,
+    "dbField": "car_reg_date",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "car_info.a.mileage",
+    "type": 1,
+    "dbField": "mileage",
+    "dbKey": "sqlSessionTemplate",
+    "table": "cyp_auction_car",
+    "group": 0
+  },
+  {
+    "col": "city_code",
+    "type": 1,
+    "dbField": "CityCodeID",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0
+  },
+  {
+    "col": "seller_info.b.registdate",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "CreateDate",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "T_CUS_MasterUser",
+      "targetTable": "T_CUS_MasterUser",
+      "leftKey": "MemberCode",
+      "rightKey": "UserMemberCode"
+    }
+  },
+  {
+    "col": "seller_info.e.service_price",
+    "type": 1,
+    "dbField": "Commission",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "tbAuction_BaseInfo",
+    "group": 0
+  },
+  {
+    "col": "seller_info.c.begintime_first",
+    "valueType": "string",
+    "type": 1,
+    "dbField": "BeginTime",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "tbAuction_BaseInfo",
+    "group": 0
+  },
+  {
+    "col": "seller_info.b.inputsource",
+    "type": 1,
+    "dbField": "InputSource",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "T_CUS_MasterUser",
+      "targetTable": "T_CUS_MasterUser",
+      "leftKey": "MemberCode",
+      "rightKey": "UserMemberCode"
+    }
+  },
+  {
+    "col": "seller_info.b.buyerlevel",
+    "type": 1,
+    "dbField": "BuyerLevel",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 0,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "T_CUS_MasterUser",
+      "targetTable": "T_CUS_MasterUser",
+      "leftKey": "MemberCode",
+      "rightKey": "UserMemberCode"
+    }
+  },
+  {
+    "col": "FieldCode",
+    "type": 1,
+    "dbField": "FieldCode",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 1,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "ReportBasicData",
+      "targetTable": "ReportBasicData",
+      "leftKey": "TradeCode",
+      "rightKey": "ReportCode"
+    },
+    "queryOne": false
+  },
+  {
+    "col": "FieldValue",
+    "type": 1,
+    "dbField": "FieldValue",
+    "dbKey": "cypSqlSessionTemplate",
+    "table": "T_TRA_C_Goods",
+    "group": 1,
+    "join": {
+      "leftTable": "T_TRA_C_Goods",
+      "rightTable": "ReportBasicData",
+      "targetTable": "ReportBasicData",
+      "leftKey": "TradeCode",
+      "rightKey": "ReportCode"
+    },
+    "queryOne": false
+  }
+]
